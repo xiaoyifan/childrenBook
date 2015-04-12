@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		CCEBB8F01ADB3438001B3234 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEBB8EF1ADB3438001B3234 /* AppDelegate.swift */; };
 		CCEBB8F21ADB3438001B3234 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEBB8F11ADB3438001B3234 /* RootViewController.swift */; };
 		CCEBB8F41ADB3438001B3234 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEBB8F31ADB3438001B3234 /* DataViewController.swift */; };
@@ -23,11 +24,31 @@
 			containerPortal = CCEBB8E21ADB3438001B3234 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CCEBB8E91ADB3438001B3234;
+=======
+		CCDB9D4A1ADB102A0017FA7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDB9D491ADB102A0017FA7F /* main.m */; };
+		CCDB9D4D1ADB102A0017FA7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDB9D4C1ADB102A0017FA7F /* AppDelegate.m */; };
+		CCDB9D501ADB102A0017FA7F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDB9D4F1ADB102A0017FA7F /* RootViewController.m */; };
+		CCDB9D531ADB102A0017FA7F /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDB9D521ADB102A0017FA7F /* DataViewController.m */; };
+		CCDB9D561ADB102A0017FA7F /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDB9D551ADB102A0017FA7F /* ModelController.m */; };
+		CCDB9D591ADB102B0017FA7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDB9D571ADB102B0017FA7F /* Main.storyboard */; };
+		CCDB9D5B1ADB102B0017FA7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDB9D5A1ADB102B0017FA7F /* Images.xcassets */; };
+		CCDB9D5E1ADB102B0017FA7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCDB9D5C1ADB102B0017FA7F /* LaunchScreen.xib */; };
+		CCDB9D6A1ADB102B0017FA7F /* happyReadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDB9D691ADB102B0017FA7F /* happyReadingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCDB9D641ADB102B0017FA7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCDB9D3C1ADB102A0017FA7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCDB9D431ADB102A0017FA7F;
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			remoteInfo = happyReading;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		CCEBB8EA1ADB3438001B3234 /* happyReading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happyReading.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEBB8EE1ADB3438001B3234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCEBB8EF1ADB3438001B3234 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,13 +65,40 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		CCEBB8E71ADB3438001B3234 /* Frameworks */ = {
+=======
+		CCDB9D441ADB102A0017FA7F /* happyReading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happyReading.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCDB9D481ADB102A0017FA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCDB9D491ADB102A0017FA7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCDB9D4B1ADB102A0017FA7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CCDB9D4C1ADB102A0017FA7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CCDB9D4E1ADB102A0017FA7F /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		CCDB9D4F1ADB102A0017FA7F /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		CCDB9D511ADB102A0017FA7F /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		CCDB9D521ADB102A0017FA7F /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		CCDB9D541ADB102A0017FA7F /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
+		CCDB9D551ADB102A0017FA7F /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
+		CCDB9D581ADB102B0017FA7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCDB9D5A1ADB102B0017FA7F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CCDB9D5D1ADB102B0017FA7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CCDB9D631ADB102B0017FA7F /* happyReadingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = happyReadingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCDB9D681ADB102B0017FA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCDB9D691ADB102B0017FA7F /* happyReadingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = happyReadingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCDB9D411ADB102A0017FA7F /* Frameworks */ = {
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
 		CCEBB9001ADB3438001B3234 /* Frameworks */ = {
+=======
+		CCDB9D601ADB102B0017FA7F /* Frameworks */ = {
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,6 +108,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		CCEBB8E11ADB3438001B3234 = {
 			isa = PBXGroup;
 			children = (
@@ -74,10 +123,27 @@
 			children = (
 				CCEBB8EA1ADB3438001B3234 /* happyReading.app */,
 				CCEBB9031ADB3438001B3234 /* happyReadingTests.xctest */,
+=======
+		CCDB9D3B1ADB102A0017FA7F = {
+			isa = PBXGroup;
+			children = (
+				CCDB9D461ADB102A0017FA7F /* happyReading */,
+				CCDB9D661ADB102B0017FA7F /* happyReadingTests */,
+				CCDB9D451ADB102A0017FA7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCDB9D451ADB102A0017FA7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCDB9D441ADB102A0017FA7F /* happyReading.app */,
+				CCDB9D631ADB102B0017FA7F /* happyReadingTests.xctest */,
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		CCEBB8EC1ADB3438001B3234 /* happyReading */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,31 +155,71 @@
 				CCEBB8FA1ADB3438001B3234 /* Images.xcassets */,
 				CCEBB8FC1ADB3438001B3234 /* LaunchScreen.xib */,
 				CCEBB8ED1ADB3438001B3234 /* Supporting Files */,
+=======
+		CCDB9D461ADB102A0017FA7F /* happyReading */ = {
+			isa = PBXGroup;
+			children = (
+				CCDB9D4B1ADB102A0017FA7F /* AppDelegate.h */,
+				CCDB9D4C1ADB102A0017FA7F /* AppDelegate.m */,
+				CCDB9D4E1ADB102A0017FA7F /* RootViewController.h */,
+				CCDB9D4F1ADB102A0017FA7F /* RootViewController.m */,
+				CCDB9D511ADB102A0017FA7F /* DataViewController.h */,
+				CCDB9D521ADB102A0017FA7F /* DataViewController.m */,
+				CCDB9D541ADB102A0017FA7F /* ModelController.h */,
+				CCDB9D551ADB102A0017FA7F /* ModelController.m */,
+				CCDB9D571ADB102B0017FA7F /* Main.storyboard */,
+				CCDB9D5A1ADB102B0017FA7F /* Images.xcassets */,
+				CCDB9D5C1ADB102B0017FA7F /* LaunchScreen.xib */,
+				CCDB9D471ADB102A0017FA7F /* Supporting Files */,
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			);
 			path = happyReading;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		CCEBB8ED1ADB3438001B3234 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				CCEBB8EE1ADB3438001B3234 /* Info.plist */,
+=======
+		CCDB9D471ADB102A0017FA7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCDB9D481ADB102A0017FA7F /* Info.plist */,
+				CCDB9D491ADB102A0017FA7F /* main.m */,
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		CCEBB9061ADB3438001B3234 /* happyReadingTests */ = {
 			isa = PBXGroup;
 			children = (
 				CCEBB9091ADB3438001B3234 /* happyReadingTests.swift */,
 				CCEBB9071ADB3438001B3234 /* Supporting Files */,
+=======
+		CCDB9D661ADB102B0017FA7F /* happyReadingTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCDB9D691ADB102B0017FA7F /* happyReadingTests.m */,
+				CCDB9D671ADB102B0017FA7F /* Supporting Files */,
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			);
 			path = happyReadingTests;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		CCEBB9071ADB3438001B3234 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				CCEBB9081ADB3438001B3234 /* Info.plist */,
+=======
+		CCDB9D671ADB102B0017FA7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCDB9D681ADB102B0017FA7F /* Info.plist */,
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -121,6 +227,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+<<<<<<< HEAD
 		CCEBB8E91ADB3438001B3234 /* happyReading */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCEBB90D1ADB3438001B3234 /* Build configuration list for PBXNativeTarget "happyReading" */;
@@ -128,6 +235,15 @@
 				CCEBB8E61ADB3438001B3234 /* Sources */,
 				CCEBB8E71ADB3438001B3234 /* Frameworks */,
 				CCEBB8E81ADB3438001B3234 /* Resources */,
+=======
+		CCDB9D431ADB102A0017FA7F /* happyReading */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCDB9D6D1ADB102B0017FA7F /* Build configuration list for PBXNativeTarget "happyReading" */;
+			buildPhases = (
+				CCDB9D401ADB102A0017FA7F /* Sources */,
+				CCDB9D411ADB102A0017FA7F /* Frameworks */,
+				CCDB9D421ADB102A0017FA7F /* Resources */,
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			);
 			buildRules = (
 			);
@@ -135,6 +251,7 @@
 			);
 			name = happyReading;
 			productName = happyReading;
+<<<<<<< HEAD
 			productReference = CCEBB8EA1ADB3438001B3234 /* happyReading.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -145,26 +262,51 @@
 				CCEBB8FF1ADB3438001B3234 /* Sources */,
 				CCEBB9001ADB3438001B3234 /* Frameworks */,
 				CCEBB9011ADB3438001B3234 /* Resources */,
+=======
+			productReference = CCDB9D441ADB102A0017FA7F /* happyReading.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCDB9D621ADB102B0017FA7F /* happyReadingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCDB9D701ADB102B0017FA7F /* Build configuration list for PBXNativeTarget "happyReadingTests" */;
+			buildPhases = (
+				CCDB9D5F1ADB102B0017FA7F /* Sources */,
+				CCDB9D601ADB102B0017FA7F /* Frameworks */,
+				CCDB9D611ADB102B0017FA7F /* Resources */,
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			);
 			buildRules = (
 			);
 			dependencies = (
+<<<<<<< HEAD
 				CCEBB9051ADB3438001B3234 /* PBXTargetDependency */,
 			);
 			name = happyReadingTests;
 			productName = happyReadingTests;
 			productReference = CCEBB9031ADB3438001B3234 /* happyReadingTests.xctest */;
+=======
+				CCDB9D651ADB102B0017FA7F /* PBXTargetDependency */,
+			);
+			name = happyReadingTests;
+			productName = happyReadingTests;
+			productReference = CCDB9D631ADB102B0017FA7F /* happyReadingTests.xctest */;
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
+<<<<<<< HEAD
 		CCEBB8E21ADB3438001B3234 /* Project object */ = {
+=======
+		CCDB9D3C1ADB102A0017FA7F /* Project object */ = {
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Yifan Xiao";
 				TargetAttributes = {
+<<<<<<< HEAD
 					CCEBB8E91ADB3438001B3234 = {
 						CreatedOnToolsVersion = 6.3;
 					};
@@ -175,6 +317,18 @@
 				};
 			};
 			buildConfigurationList = CCEBB8E51ADB3438001B3234 /* Build configuration list for PBXProject "happyReading" */;
+=======
+					CCDB9D431ADB102A0017FA7F = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					CCDB9D621ADB102B0017FA7F = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = CCDB9D431ADB102A0017FA7F;
+					};
+				};
+			};
+			buildConfigurationList = CCDB9D3F1ADB102A0017FA7F /* Build configuration list for PBXProject "happyReading" */;
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -182,6 +336,7 @@
 				en,
 				Base,
 			);
+<<<<<<< HEAD
 			mainGroup = CCEBB8E11ADB3438001B3234;
 			productRefGroup = CCEBB8EB1ADB3438001B3234 /* Products */;
 			projectDirPath = "";
@@ -189,11 +344,21 @@
 			targets = (
 				CCEBB8E91ADB3438001B3234 /* happyReading */,
 				CCEBB9021ADB3438001B3234 /* happyReadingTests */,
+=======
+			mainGroup = CCDB9D3B1ADB102A0017FA7F;
+			productRefGroup = CCDB9D451ADB102A0017FA7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCDB9D431ADB102A0017FA7F /* happyReading */,
+				CCDB9D621ADB102B0017FA7F /* happyReadingTests */,
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+<<<<<<< HEAD
 		CCEBB8E81ADB3438001B3234 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -205,6 +370,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CCEBB9011ADB3438001B3234 /* Resources */ = {
+=======
+		CCDB9D421ADB102A0017FA7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCDB9D591ADB102B0017FA7F /* Main.storyboard in Resources */,
+				CCDB9D5E1ADB102B0017FA7F /* LaunchScreen.xib in Resources */,
+				CCDB9D5B1ADB102B0017FA7F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCDB9D611ADB102B0017FA7F /* Resources */ = {
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -214,6 +392,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+<<<<<<< HEAD
 		CCEBB8E61ADB3438001B3234 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,32 +409,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCEBB90A1ADB3438001B3234 /* happyReadingTests.swift in Sources */,
+=======
+		CCDB9D401ADB102A0017FA7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCDB9D531ADB102A0017FA7F /* DataViewController.m in Sources */,
+				CCDB9D4D1ADB102A0017FA7F /* AppDelegate.m in Sources */,
+				CCDB9D561ADB102A0017FA7F /* ModelController.m in Sources */,
+				CCDB9D4A1ADB102A0017FA7F /* main.m in Sources */,
+				CCDB9D501ADB102A0017FA7F /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCDB9D5F1ADB102B0017FA7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCDB9D6A1ADB102B0017FA7F /* happyReadingTests.m in Sources */,
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+<<<<<<< HEAD
 		CCEBB9051ADB3438001B3234 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CCEBB8E91ADB3438001B3234 /* happyReading */;
 			targetProxy = CCEBB9041ADB3438001B3234 /* PBXContainerItemProxy */;
+=======
+		CCDB9D651ADB102B0017FA7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCDB9D431ADB102A0017FA7F /* happyReading */;
+			targetProxy = CCDB9D641ADB102B0017FA7F /* PBXContainerItemProxy */;
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+<<<<<<< HEAD
 		CCEBB8F71ADB3438001B3234 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CCEBB8F81ADB3438001B3234 /* Base */,
+=======
+		CCDB9D571ADB102B0017FA7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCDB9D581ADB102B0017FA7F /* Base */,
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		CCEBB8FC1ADB3438001B3234 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CCEBB8FD1ADB3438001B3234 /* Base */,
+=======
+		CCDB9D5C1ADB102B0017FA7F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCDB9D5D1ADB102B0017FA7F /* Base */,
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -263,7 +482,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+<<<<<<< HEAD
 		CCEBB90B1ADB3438001B3234 /* Debug */ = {
+=======
+		CCDB9D6B1ADB102B0017FA7F /* Debug */ = {
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -303,12 +526,19 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+<<<<<<< HEAD
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+=======
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		CCEBB90C1ADB3438001B3234 /* Release */ = {
+=======
+		CCDB9D6C1ADB102B0017FA7F /* Release */ = {
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -346,7 +576,11 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
 		CCEBB90E1ADB3438001B3234 /* Debug */ = {
+=======
+		CCDB9D6E1ADB102B0017FA7F /* Debug */ = {
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -357,7 +591,11 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		CCEBB90F1ADB3438001B3234 /* Release */ = {
+=======
+		CCDB9D6F1ADB102B0017FA7F /* Release */ = {
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -368,7 +606,11 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
 		CCEBB9111ADB3438001B3234 /* Debug */ = {
+=======
+		CCDB9D711ADB102B0017FA7F /* Debug */ = {
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -387,7 +629,11 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		CCEBB9121ADB3438001B3234 /* Release */ = {
+=======
+		CCDB9D721ADB102B0017FA7F /* Release */ = {
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -405,15 +651,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+<<<<<<< HEAD
 		CCEBB8E51ADB3438001B3234 /* Build configuration list for PBXProject "happyReading" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CCEBB90B1ADB3438001B3234 /* Debug */,
 				CCEBB90C1ADB3438001B3234 /* Release */,
+=======
+		CCDB9D3F1ADB102A0017FA7F /* Build configuration list for PBXProject "happyReading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCDB9D6B1ADB102B0017FA7F /* Debug */,
+				CCDB9D6C1ADB102B0017FA7F /* Release */,
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+<<<<<<< HEAD
 		CCEBB90D1ADB3438001B3234 /* Build configuration list for PBXNativeTarget "happyReading" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -427,10 +682,29 @@
 			buildConfigurations = (
 				CCEBB9111ADB3438001B3234 /* Debug */,
 				CCEBB9121ADB3438001B3234 /* Release */,
+=======
+		CCDB9D6D1ADB102B0017FA7F /* Build configuration list for PBXNativeTarget "happyReading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCDB9D6E1ADB102B0017FA7F /* Debug */,
+				CCDB9D6F1ADB102B0017FA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCDB9D701ADB102B0017FA7F /* Build configuration list for PBXNativeTarget "happyReadingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCDB9D711ADB102B0017FA7F /* Debug */,
+				CCDB9D721ADB102B0017FA7F /* Release */,
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
+<<<<<<< HEAD
 	rootObject = CCEBB8E21ADB3438001B3234 /* Project object */;
+=======
+	rootObject = CCDB9D3C1ADB102A0017FA7F /* Project object */;
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
 }

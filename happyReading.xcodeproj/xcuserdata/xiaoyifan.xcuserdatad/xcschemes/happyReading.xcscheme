@@ -14,7 +14,11 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+<<<<<<< HEAD
                BlueprintIdentifier = "CCEBB8E91ADB3438001B3234"
+=======
+               BlueprintIdentifier = "CCDB9D431ADB102A0017FA7F"
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
                BuildableName = "happyReading.app"
                BlueprintName = "happyReading"
                ReferencedContainer = "container:happyReading.xcodeproj">
@@ -28,7 +32,11 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+<<<<<<< HEAD
                BlueprintIdentifier = "CCEBB9021ADB3438001B3234"
+=======
+               BlueprintIdentifier = "CCDB9D621ADB102B0017FA7F"
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
                BuildableName = "happyReadingTests.xctest"
                BlueprintName = "happyReadingTests"
                ReferencedContainer = "container:happyReading.xcodeproj">
@@ -46,7 +54,11 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
+<<<<<<< HEAD
                BlueprintIdentifier = "CCEBB9021ADB3438001B3234"
+=======
+               BlueprintIdentifier = "CCDB9D621ADB102B0017FA7F"
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
                BuildableName = "happyReadingTests.xctest"
                BlueprintName = "happyReadingTests"
                ReferencedContainer = "container:happyReading.xcodeproj">
@@ -56,7 +68,11 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "CCEBB8E91ADB3438001B3234"
+=======
+            BlueprintIdentifier = "CCDB9D431ADB102A0017FA7F"
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
             BuildableName = "happyReading.app"
             BlueprintName = "happyReading"
             ReferencedContainer = "container:happyReading.xcodeproj">
@@ -76,7 +92,11 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "CCEBB8E91ADB3438001B3234"
+=======
+            BlueprintIdentifier = "CCDB9D431ADB102A0017FA7F"
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
             BuildableName = "happyReading.app"
             BlueprintName = "happyReading"
             ReferencedContainer = "container:happyReading.xcodeproj">
@@ -95,7 +115,11 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "CCEBB8E91ADB3438001B3234"
+=======
+            BlueprintIdentifier = "CCDB9D431ADB102A0017FA7F"
+>>>>>>> 159307f3681663d8348e8e7bf4689c8b6d29c544
             BuildableName = "happyReading.app"
             BlueprintName = "happyReading"
             ReferencedContainer = "container:happyReading.xcodeproj">
