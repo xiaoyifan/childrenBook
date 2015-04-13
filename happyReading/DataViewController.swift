@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
 
-class DataViewController: UIViewController {
+class DataViewController: UIViewController, AVSpeechSynthesizerDelegate {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textLabel: UILabel!
@@ -19,7 +20,8 @@ class DataViewController: UIViewController {
     @IBOutlet weak var imageDown: UIImageView!
     
     var dataObject: AnyObject?
-
+    var synthesizer: AVSpeechSynthesizer?
+    var utterance:AVSpeechUtterance?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,13 +70,47 @@ class DataViewController: UIViewController {
         self.textLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
         self.textLabel.numberOfLines = 0
         
+        let string = self.textLabel.text
+        self.utterance = AVSpeechUtterance(string: string)
+        utterance!.voice = AVSpeechSynthesisVoice(language: "en-US")
+        utterance!.pitchMultiplier = 1.50
+        utterance!.volume = 1.0
+        utterance!.rate = AVSpeechUtteranceMinimumSpeechRate;
+        utterance!.preUtteranceDelay = 0.2;
+        utterance!.postUtteranceDelay = 0.2;
         
-    }
+        self.synthesizer = AVSpeechSynthesizer()
+        
+        self.synthesizer!.delegate = self
+        self.synthesizer!.pauseSpeakingAtBoundary(.Word)
+
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        if (defaults.valueForKey("autoSpeak") === 1){
+            self.synthesizer!.speakUtterance(utterance)        }
+                }
     
     @IBAction func pressHomeButton(sender: AnyObject) {
         
        self.navigationController!.popToRootViewControllerAnimated(true)
     
+    }
+    
+    @IBAction func speakToMe(sender: AnyObject) {
+        self.synthesizer!.speakUtterance(utterance)
+
+    }
+    
+    // MARK: AVSpeechSynthesizerDelegate
+    
+    func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance!) {
+        let mutableAttributedString = NSMutableAttributedString(string: utterance.speechString)
+        mutableAttributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: characterRange)
+        textLabel.attributedText = mutableAttributedString
+    }
+    
+    func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, didFinishSpeechUtterance utterance: AVSpeechUtterance!) {
+        textLabel.attributedText = NSAttributedString(string: utterance.speechString)
     }
 
     override func didReceiveMemoryWarning() {
@@ -85,6 +121,11 @@ class DataViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+    }
+    
+    
+    override func viewWillDisappear(animated: Bool) {
+        self.synthesizer!.stopSpeakingAtBoundary(AVSpeechBoundary.Immediate)
     }
 
 

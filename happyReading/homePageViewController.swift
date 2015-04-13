@@ -37,7 +37,9 @@ class homePageViewController: UIViewController {
     
     @IBAction func pressSettings(sender: AnyObject) {
         
+        let rvc = self.storyboard!.instantiateViewControllerWithIdentifier("SettingsViewController") as! SettingsViewController
         
+        self.navigationController!.pushViewController(rvc, animated: true)
     }
     
     

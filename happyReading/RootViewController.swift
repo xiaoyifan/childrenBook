@@ -59,6 +59,7 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
         println(backgroundMusicURL)
         var error:NSError?
         backgroundMusic = AVAudioPlayer(contentsOfURL: backgroundMusicURL, error: &error)
+        backgroundMusic.volume = 0.4
         backgroundMusic.prepareToPlay()
         backgroundMusic.play()
         

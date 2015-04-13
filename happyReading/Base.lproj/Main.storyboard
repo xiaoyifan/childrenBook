@@ -132,6 +132,103 @@
             </objects>
             <point key="canvasLocation" x="203" y="-907"/>
         </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="iGV-1W-cVw">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" id="e2B-Px-ULl" customClass="SettingsViewController" customModule="happyReading" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8eY-yy-gH1"/>
+                        <viewControllerLayoutGuide type="bottom" id="b4A-Q8-TKr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Zq-H6-ZzD">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87p-yR-8jJ">
+                                <rect key="frame" x="298" y="50" width="172" height="63"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="44"/>
+                                <color key="textColor" red="0.42363083964646464" green="0.2343949774536179" blue="0.019014868923573396" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto Read To Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Eo-0K-fcZ">
+                                <rect key="frame" x="208" y="481" width="353" height="63"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="44"/>
+                                <color key="textColor" red="0.42363083959999998" green="0.23439497749999999" blue="0.019014868920000001" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aQz-DZ-Zrv">
+                                <rect key="frame" x="382" y="1" width="768" height="425"/>
+                                <color key="backgroundColor" red="1" green="0.99083781969999996" blue="0.31975737929999998" alpha="0.71999999999999997" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0R-P3-fDy">
+                                <rect key="frame" x="312" y="738" width="156" height="44"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
+                                <state key="normal" title="Back Home">
+                                    <color key="titleColor" red="0.42363083959999998" green="0.23439497749999999" blue="0.019014868920000001" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backHome:" destination="e2B-Px-ULl" eventType="touchUpInside" id="o1I-ej-yUX"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dxi-z4-aB0">
+                                <rect key="frame" x="360" y="560" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchValueChanged:" destination="e2B-Px-ULl" eventType="valueChanged" id="flt-6m-cVT"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="5Eo-0K-fcZ" secondAttribute="centerX" id="28H-9m-Y0r"/>
+                            <constraint firstItem="b4A-Q8-TKr" firstAttribute="top" secondItem="T0R-P3-fDy" secondAttribute="bottom" constant="242" id="5tn-Dm-hks"/>
+                            <constraint firstAttribute="centerY" secondItem="dxi-z4-aB0" secondAttribute="centerY" id="8Kd-yh-hbI"/>
+                            <constraint firstAttribute="centerX" secondItem="T0R-P3-fDy" secondAttribute="centerX" constant="-5.5" id="BKx-Kh-HpZ"/>
+                            <constraint firstItem="5Eo-0K-fcZ" firstAttribute="leading" secondItem="9Zq-H6-ZzD" secondAttribute="leadingMargin" constant="100" id="DMX-Vf-yOM"/>
+                            <constraint firstAttribute="centerX" secondItem="87p-yR-8jJ" secondAttribute="centerX" id="IXy-0S-5hW"/>
+                            <constraint firstAttribute="centerY" secondItem="5Eo-0K-fcZ" secondAttribute="centerY" id="VPO-dV-S2J"/>
+                            <constraint firstItem="87p-yR-8jJ" firstAttribute="top" secondItem="8eY-yy-gH1" secondAttribute="bottom" constant="30" id="lV9-fk-W1J"/>
+                            <constraint firstItem="dxi-z4-aB0" firstAttribute="top" secondItem="5Eo-0K-fcZ" secondAttribute="bottom" constant="16" id="pJz-DZ-b6F"/>
+                            <constraint firstItem="dxi-z4-aB0" firstAttribute="leading" secondItem="5Eo-0K-fcZ" secondAttribute="trailing" constant="60" id="q00-UN-XFA"/>
+                            <constraint firstAttribute="centerX" secondItem="dxi-z4-aB0" secondAttribute="centerX" id="vYs-yQ-Q3T"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DMX-Vf-yOM"/>
+                                <exclude reference="8Kd-yh-hbI"/>
+                                <exclude reference="q00-UN-XFA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="dynamicsView" destination="aQz-DZ-Zrv" id="ZsY-OT-WVM"/>
+                        <outlet property="mySwitch" destination="dxi-z4-aB0" id="zlf-W0-t6J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zjo-hR-aSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="203" y="182"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tzP-Ue-oSP">
+            <objects>
+                <viewController id="Pp1-YP-kQm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lTM-99-4wN"/>
+                        <viewControllerLayoutGuide type="bottom" id="t0M-Wn-o5x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SUD-jG-lh2">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FE1-uM-Utd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043" y="187"/>
+        </scene>
         <!--Data View Controller-->
         <scene sceneID="snT-py-3hH">
             <objects>
@@ -212,6 +309,19 @@
                                     <action selector="pressHomeButton:" destination="S4R-Ja-viH" eventType="touchUpInside" id="bI8-k5-Ij4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4X-H0-5gx">
+                                <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="32m-uf-xRA"/>
+                                    <constraint firstAttribute="height" constant="40" id="9kj-NX-Bds"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="loudspeaker.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="speakToMe:" destination="S4R-Ja-viH" eventType="touchUpInside" id="eSb-bt-8pg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.99083781968309614" blue="0.31975737925721781" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -220,10 +330,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="DRJ-xB-duk" secondAttribute="trailing" constant="24" id="1gN-50-T5s"/>
                             <constraint firstAttribute="trailing" secondItem="s1b-V9-EN7" secondAttribute="trailing" constant="20" symbolic="YES" id="333-Jl-G0r"/>
                             <constraint firstItem="s1b-V9-EN7" firstAttribute="leading" secondItem="ZwX-cT-FIQ" secondAttribute="leading" constant="20" symbolic="YES" id="CIC-qa-9gW"/>
+                            <constraint firstItem="s1b-V9-EN7" firstAttribute="leading" secondItem="l4X-H0-5gx" secondAttribute="leading" id="OT3-LZ-3tn"/>
                             <constraint firstItem="cF2-Le-7mQ" firstAttribute="leading" secondItem="ZwX-cT-FIQ" secondAttribute="leading" constant="20" symbolic="YES" id="PnF-O8-Bso"/>
                             <constraint firstAttribute="bottom" secondItem="s1b-V9-EN7" secondAttribute="bottom" constant="20" symbolic="YES" id="Xg4-Xc-7kb"/>
                             <constraint firstAttribute="trailing" secondItem="cF2-Le-7mQ" secondAttribute="trailing" constant="20" symbolic="YES" id="cCk-mG-gz5"/>
                             <constraint firstItem="s1b-V9-EN7" firstAttribute="top" secondItem="cF2-Le-7mQ" secondAttribute="bottom" constant="15" id="kQJ-gh-hu4"/>
+                            <constraint firstItem="cF2-Le-7mQ" firstAttribute="centerY" secondItem="l4X-H0-5gx" secondAttribute="centerY" id="mTh-ik-82O"/>
                             <constraint firstItem="cF2-Le-7mQ" firstAttribute="top" secondItem="ZwX-cT-FIQ" secondAttribute="top" constant="20" symbolic="YES" id="zem-Jm-uYh"/>
                         </constraints>
                         <variation key="default">
@@ -265,10 +377,28 @@
             </objects>
             <point key="canvasLocation" x="-769" y="-907"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="FuY-z2-SrV">
+            <objects>
+                <viewController id="zHc-sN-P9v" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oNQ-Eo-3cO"/>
+                        <viewControllerLayoutGuide type="bottom" id="TQT-Qf-sNT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1fN-uv-wwe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T2R-ly-EuX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="homeimage.png" width="1287" height="903"/>
         <image name="house.png" width="1496" height="1496"/>
+        <image name="loudspeaker.png" width="640" height="640"/>
         <image name="playbutton.png" width="147" height="148"/>
         <image name="wallpaper.jpg" width="400" height="635"/>
     </resources>
