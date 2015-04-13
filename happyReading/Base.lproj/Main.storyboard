@@ -188,28 +188,6 @@
                                         <color key="textColor" red="0.054745907349999998" green="0.32195836890000001" blue="0.54302793559999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lc1-6A-edV">
-                                        <rect key="frame" x="567" y="829" width="51" height="45"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="23"/>
-                                        <state key="normal" title="Done">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="submit:" destination="e2B-Px-ULl" eventType="touchUpInside" id="vDT-0X-9u4"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 x 5 = ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFn-OK-KNs">
-                                        <rect key="frame" x="234" y="268" width="300" height="61"/>
-                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="47"/>
-                                        <color key="textColor" red="0.054745907349999998" green="0.32195836890000001" blue="0.54302793559999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gnk-bV-k68">
-                                        <rect key="frame" x="336" y="389" width="97" height="76"/>
-                                        <color key="textColor" red="0.054745907349999998" green="0.32195836890000001" blue="0.54302793559999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejc-me-HJ3">
                                         <rect key="frame" x="150" y="829" width="68" height="45"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="23"/>
@@ -220,18 +198,54 @@
                                             <action selector="cancelButton:" destination="e2B-Px-ULl" eventType="touchUpInside" id="aDf-X6-ip3"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lc1-6A-edV">
+                                        <rect key="frame" x="567" y="829" width="51" height="45"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="23"/>
+                                        <state key="normal" title="Done">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submit:" destination="e2B-Px-ULl" eventType="touchUpInside" id="vDT-0X-9u4"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 x 5 = ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFn-OK-KNs">
+                                        <rect key="frame" x="264" y="268" width="241" height="60"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="47"/>
+                                        <color key="textColor" red="0.054745907349999998" green="0.32195836890000001" blue="0.54302793559999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gnk-bV-k68">
+                                        <rect key="frame" x="520" y="273" width="60" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="WLG-xF-NfI"/>
+                                            <constraint firstAttribute="height" constant="50" id="qvH-Jk-SN4"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.054745907349999998" green="0.32195836890000001" blue="0.54302793559999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.99083781969999996" blue="0.31975737929999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="ejc-me-HJ3" secondAttribute="bottom" constant="150" id="1tJ-Jy-WwU"/>
+                                    <constraint firstAttribute="centerX" secondItem="TFn-OK-KNs" secondAttribute="centerX" id="3dd-TG-BJu"/>
                                     <constraint firstItem="9Dm-dy-lof" firstAttribute="top" secondItem="9fS-fi-V5C" secondAttribute="bottom" constant="18" id="6Gz-eP-uvn"/>
                                     <constraint firstAttribute="centerX" secondItem="9Dm-dy-lof" secondAttribute="centerX" id="FAg-yU-4KL"/>
+                                    <constraint firstItem="TFn-OK-KNs" firstAttribute="top" secondItem="9Dm-dy-lof" secondAttribute="bottom" constant="127" id="OyW-oG-cK9"/>
                                     <constraint firstItem="ejc-me-HJ3" firstAttribute="leading" secondItem="aQz-DZ-Zrv" secondAttribute="leading" constant="150" id="Peo-PG-bSo"/>
                                     <constraint firstAttribute="bottom" secondItem="lc1-6A-edV" secondAttribute="bottom" constant="150" id="T3l-GT-wOR"/>
+                                    <constraint firstItem="gnk-bV-k68" firstAttribute="leading" secondItem="TFn-OK-KNs" secondAttribute="trailing" constant="15" id="aJV-pg-c1r"/>
+                                    <constraint firstItem="gnk-bV-k68" firstAttribute="baseline" secondItem="TFn-OK-KNs" secondAttribute="baseline" id="c5D-T8-XnO"/>
                                     <constraint firstItem="9fS-fi-V5C" firstAttribute="top" secondItem="aQz-DZ-Zrv" secondAttribute="top" constant="60" id="olA-h2-4DM"/>
                                     <constraint firstAttribute="trailing" secondItem="lc1-6A-edV" secondAttribute="trailing" constant="150" id="pFD-gb-fTv"/>
                                     <constraint firstAttribute="centerX" secondItem="9fS-fi-V5C" secondAttribute="centerX" id="pzO-hK-KWw"/>
+                                    <constraint firstItem="gnk-bV-k68" firstAttribute="centerY" secondItem="TFn-OK-KNs" secondAttribute="centerY" id="zSn-g2-HMP"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="c5D-T8-XnO"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

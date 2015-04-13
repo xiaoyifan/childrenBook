@@ -69,7 +69,7 @@ class SettingsViewController: UIViewController, UICollisionBehaviorDelegate {
         self.parentalView.alpha = 0
         }
         else{
-            var alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: UIAlertControllerStyle.Alert)
+            var alert = UIAlertController(title: "The answer is wrong", message: "please answer the question again, or you can leave", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
         }
