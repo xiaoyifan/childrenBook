@@ -93,8 +93,8 @@
                                     <action selector="pressSettings:" destination="DDF-fU-0Zy" eventType="touchUpInside" id="vVr-vx-3PW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Author: Yifan Xiao" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Na-Q1-5di">
-                                <rect key="frame" x="234" y="752" width="300" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author: Yifan Xiao" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Na-Q1-5di">
+                                <rect key="frame" x="234" y="752" width="300" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="sIG-KV-sle"/>
                                 </constraints>
@@ -156,10 +156,12 @@
                                 <color key="textColor" red="0.42363083959999998" green="0.23439497749999999" blue="0.019014868920000001" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aQz-DZ-Zrv">
-                                <rect key="frame" x="382" y="1" width="768" height="425"/>
-                                <color key="backgroundColor" red="1" green="0.99083781969999996" blue="0.31975737929999998" alpha="0.71999999999999997" colorSpace="calibratedRGB"/>
-                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dxi-z4-aB0">
+                                <rect key="frame" x="360" y="560" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchValueChanged:" destination="e2B-Px-ULl" eventType="valueChanged" id="flt-6m-cVT"/>
+                                </connections>
+                            </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0R-P3-fDy">
                                 <rect key="frame" x="312" y="738" width="156" height="44"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
@@ -171,12 +173,66 @@
                                     <action selector="backHome:" destination="e2B-Px-ULl" eventType="touchUpInside" id="o1I-ej-yUX"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dxi-z4-aB0">
-                                <rect key="frame" x="360" y="560" width="51" height="31"/>
-                                <connections>
-                                    <action selector="switchValueChanged:" destination="e2B-Px-ULl" eventType="valueChanged" id="flt-6m-cVT"/>
-                                </connections>
-                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQz-DZ-Zrv">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place them In Order" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fS-fi-V5C">
+                                        <rect key="frame" x="219" y="60" width="330" height="36"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
+                                        <color key="textColor" red="0.054745907345521462" green="0.32195836891503904" blue="0.54302793560606055" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ask parents for help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Dm-dy-lof">
+                                        <rect key="frame" x="262" y="114" width="244" height="27"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
+                                        <color key="textColor" red="0.054745907349999998" green="0.32195836890000001" blue="0.54302793559999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lc1-6A-edV">
+                                        <rect key="frame" x="567" y="829" width="51" height="45"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="23"/>
+                                        <state key="normal" title="Done">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submit:" destination="e2B-Px-ULl" eventType="touchUpInside" id="vDT-0X-9u4"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 x 5 = ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFn-OK-KNs">
+                                        <rect key="frame" x="234" y="268" width="300" height="61"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="47"/>
+                                        <color key="textColor" red="0.054745907349999998" green="0.32195836890000001" blue="0.54302793559999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gnk-bV-k68">
+                                        <rect key="frame" x="336" y="389" width="97" height="76"/>
+                                        <color key="textColor" red="0.054745907349999998" green="0.32195836890000001" blue="0.54302793559999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejc-me-HJ3">
+                                        <rect key="frame" x="150" y="829" width="68" height="45"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="23"/>
+                                        <state key="normal" title="Cancal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButton:" destination="e2B-Px-ULl" eventType="touchUpInside" id="aDf-X6-ip3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.99083781969999996" blue="0.31975737929999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ejc-me-HJ3" secondAttribute="bottom" constant="150" id="1tJ-Jy-WwU"/>
+                                    <constraint firstItem="9Dm-dy-lof" firstAttribute="top" secondItem="9fS-fi-V5C" secondAttribute="bottom" constant="18" id="6Gz-eP-uvn"/>
+                                    <constraint firstAttribute="centerX" secondItem="9Dm-dy-lof" secondAttribute="centerX" id="FAg-yU-4KL"/>
+                                    <constraint firstItem="ejc-me-HJ3" firstAttribute="leading" secondItem="aQz-DZ-Zrv" secondAttribute="leading" constant="150" id="Peo-PG-bSo"/>
+                                    <constraint firstAttribute="bottom" secondItem="lc1-6A-edV" secondAttribute="bottom" constant="150" id="T3l-GT-wOR"/>
+                                    <constraint firstItem="9fS-fi-V5C" firstAttribute="top" secondItem="aQz-DZ-Zrv" secondAttribute="top" constant="60" id="olA-h2-4DM"/>
+                                    <constraint firstAttribute="trailing" secondItem="lc1-6A-edV" secondAttribute="trailing" constant="150" id="pFD-gb-fTv"/>
+                                    <constraint firstAttribute="centerX" secondItem="9fS-fi-V5C" secondAttribute="centerX" id="pzO-hK-KWw"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -185,11 +241,15 @@
                             <constraint firstAttribute="centerY" secondItem="dxi-z4-aB0" secondAttribute="centerY" id="8Kd-yh-hbI"/>
                             <constraint firstAttribute="centerX" secondItem="T0R-P3-fDy" secondAttribute="centerX" constant="-5.5" id="BKx-Kh-HpZ"/>
                             <constraint firstItem="5Eo-0K-fcZ" firstAttribute="leading" secondItem="9Zq-H6-ZzD" secondAttribute="leadingMargin" constant="100" id="DMX-Vf-yOM"/>
+                            <constraint firstItem="aQz-DZ-Zrv" firstAttribute="top" secondItem="9Zq-H6-ZzD" secondAttribute="topMargin" id="Fh7-fr-YYG"/>
                             <constraint firstAttribute="centerX" secondItem="87p-yR-8jJ" secondAttribute="centerX" id="IXy-0S-5hW"/>
+                            <constraint firstItem="aQz-DZ-Zrv" firstAttribute="leading" secondItem="9Zq-H6-ZzD" secondAttribute="leadingMargin" constant="-16" id="QXo-5B-mix"/>
                             <constraint firstAttribute="centerY" secondItem="5Eo-0K-fcZ" secondAttribute="centerY" id="VPO-dV-S2J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aQz-DZ-Zrv" secondAttribute="trailing" constant="-16" id="iwd-3q-mCc"/>
                             <constraint firstItem="87p-yR-8jJ" firstAttribute="top" secondItem="8eY-yy-gH1" secondAttribute="bottom" constant="30" id="lV9-fk-W1J"/>
                             <constraint firstItem="dxi-z4-aB0" firstAttribute="top" secondItem="5Eo-0K-fcZ" secondAttribute="bottom" constant="16" id="pJz-DZ-b6F"/>
                             <constraint firstItem="dxi-z4-aB0" firstAttribute="leading" secondItem="5Eo-0K-fcZ" secondAttribute="trailing" constant="60" id="q00-UN-XFA"/>
+                            <constraint firstItem="b4A-Q8-TKr" firstAttribute="top" secondItem="aQz-DZ-Zrv" secondAttribute="bottom" id="syb-5g-9bS"/>
                             <constraint firstAttribute="centerX" secondItem="dxi-z4-aB0" secondAttribute="centerX" id="vYs-yQ-Q3T"/>
                         </constraints>
                         <variation key="default">
@@ -202,32 +262,14 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
-                        <outlet property="dynamicsView" destination="aQz-DZ-Zrv" id="ZsY-OT-WVM"/>
+                        <outlet property="answerField" destination="gnk-bV-k68" id="qQI-wd-Mop"/>
                         <outlet property="mySwitch" destination="dxi-z4-aB0" id="zlf-W0-t6J"/>
+                        <outlet property="parentalView" destination="aQz-DZ-Zrv" id="E1J-cW-ll0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zjo-hR-aSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="203" y="182"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="tzP-Ue-oSP">
-            <objects>
-                <viewController id="Pp1-YP-kQm" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lTM-99-4wN"/>
-                        <viewControllerLayoutGuide type="bottom" id="t0M-Wn-o5x"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="SUD-jG-lh2">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FE1-uM-Utd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1043" y="187"/>
         </scene>
         <!--Data View Controller-->
         <scene sceneID="snT-py-3hH">

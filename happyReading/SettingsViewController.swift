@@ -10,9 +10,12 @@ import UIKit
 
 class SettingsViewController: UIViewController, UICollisionBehaviorDelegate {
     
-    @IBOutlet weak var dynamicsView: UIView!
+    @IBOutlet weak var parentalView: UIView!
     
     @IBOutlet weak var mySwitch: UISwitch!
+    
+    @IBOutlet weak var answerField: UITextField!
+    
     
     var animator: UIDynamicAnimator!
     var gravity: UIGravityBehavior!
@@ -54,34 +57,52 @@ class SettingsViewController: UIViewController, UICollisionBehaviorDelegate {
     }
     
     
+    @IBAction func cancelButton(sender: UIButton) {
+        
+         self.navigationController!.popViewControllerAnimated(true)
+    }
+    
+    
+    @IBAction func submit(sender: UIButton) {
+        
+        if self.answerField.text == "15"{
+        self.parentalView.alpha = 0
+        }
+        else{
+            var alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
     func setup() {
         
-        let barrier = UIView(frame: CGRect(x: 0, y: 150, width: 50, height: 20))
-        barrier.backgroundColor = UIColor.blackColor()
-        dynamicsView.addSubview(barrier)
-        
-        animator = UIDynamicAnimator(referenceView: dynamicsView)
+        animator = UIDynamicAnimator(referenceView: parentalView)
         
         // Gravity
         gravity = UIGravityBehavior()
-        gravity.gravityDirection = CGVectorMake(0, 9.8)
+        gravity.gravityDirection = CGVectorMake(0, 5)
         animator.addBehavior(gravity)
         
         // Collision
         collision = UICollisionBehavior()
         collision.collisionDelegate = self
-        collision.addBoundaryWithIdentifier("barrier", forPath: UIBezierPath(rect: barrier.frame))
         collision.translatesReferenceBoundsIntoBoundary = true
         animator.addBehavior(collision)
         
         // Items Behavior
         itemBehavior = UIDynamicItemBehavior()
-        itemBehavior.elasticity = 0.9
-        itemBehavior.friction = 0.1
+        itemBehavior.elasticity = 0.75
+        itemBehavior.friction = 0.4
+        self.itemBehavior.resistance = 0.5;
         
-        square = Box(number: 100)
-        dynamicsView.addSubview(square)
-        collision.addItem(square)
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -95,9 +116,10 @@ class SettingsViewController: UIViewController, UICollisionBehaviorDelegate {
     
     //: MARK - Box Methods
     func createBoxes() {
-        for idx in 1...10 {
+        for idx in 1...30{
             let box = Box(number: idx)
-            dynamicsView.addSubview(box)
+            box.layer.cornerRadius = 25;
+            parentalView.addSubview(box)
             makeBoxDynamic(box)
             boxes.append(box)
         }
@@ -118,9 +140,7 @@ class SettingsViewController: UIViewController, UICollisionBehaviorDelegate {
         UIView.animateWithDuration(0.3) {
             collidingView.backgroundColor = collidingView.color
         }
-        if collidingView.tag == 9 {
-            gravity.gravityDirection = CGVectorMake(0, 0.0)
-        }
+        
     }
     
     override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
@@ -134,15 +154,5 @@ class SettingsViewController: UIViewController, UICollisionBehaviorDelegate {
     }
 
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

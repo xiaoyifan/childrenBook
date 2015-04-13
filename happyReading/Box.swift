@@ -22,7 +22,7 @@ class Box : UIView {
     
     let maxX : CGFloat = 100;
     let maxY : CGFloat = 100;
-    let boxSize : CGFloat = 30.0
+    let boxSize : CGFloat = 50.0
 
     var bounced : Bool = false // Tell us if it bounced
     
