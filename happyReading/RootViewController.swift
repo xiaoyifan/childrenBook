@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
 
 class RootViewController: UIViewController, UIPageViewControllerDelegate {
 
     var pageViewController: UIPageViewController?
-
+    var models:NSMutableArray?
+    
+    var backgroundMusic = AVAudioPlayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +22,20 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
         // Configure the page view controller and add it as a child view controller.
         self.pageViewController = UIPageViewController(transitionStyle: .PageCurl, navigationOrientation: .Horizontal, options: nil)
         self.pageViewController!.delegate = self
-
-        let startingViewController: DataViewController = self.modelController.viewControllerAtIndex(0, storyboard: self.storyboard!)!
+        
+        
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var pageNumber = 0
+        
+        if (defaults.valueForKey("pageNumber") !== nil){
+            pageNumber = defaults.valueForKey("pageNumber") as! Int
+        }
+        println("the initial page number is \(pageNumber)")
+        
+        
+        
+        let startingViewController: DataViewController = self.modelController.viewControllerAtIndex(pageNumber, storyboard: self.storyboard!)!
         let viewControllers = [startingViewController]
         self.pageViewController!.setViewControllers(viewControllers, direction: .Forward, animated: false, completion: {done in })
 
@@ -38,6 +53,16 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
 
         // Add the page view controller's gesture recognizers to the book view controller's view so that the gestures are started more easily.
         self.view.gestureRecognizers = self.pageViewController!.gestureRecognizers
+        
+
+        let backgroundMusicURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("maiya", ofType:"mp3")!)
+        println(backgroundMusicURL)
+        var error:NSError?
+        backgroundMusic = AVAudioPlayer(contentsOfURL: backgroundMusicURL, error: &error)
+        backgroundMusic.prepareToPlay()
+        backgroundMusic.play()
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

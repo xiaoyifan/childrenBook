@@ -8,15 +8,6 @@
 
 import UIKit
 
-/*
- A controller object that manages a simple model -- a collection of month names.
- 
- The controller serves as the data source for the page view controller; it therefore implements pageViewController:viewControllerBeforeViewController: and pageViewController:viewControllerAfterViewController:.
- It also implements a custom method, viewControllerAtIndex: which is useful in the implementation of the data source methods, and in the initial configuration of the application.
- 
- There is no need to actually create view controllers for each page in advance -- indeed doing so incurs unnecessary overhead. Given the data model, these methods create, configure, and return a new view controller on demand.
- */
-
 
 class ModelController: NSObject, UIPageViewControllerDataSource {
 
@@ -26,8 +17,9 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     override init() {
         super.init()
         // Create the data model.
-        let dateFormatter = NSDateFormatter()
-        pageData = dateFormatter.monthSymbols
+        let plistPath:String = NSBundle.mainBundle().pathForResource("PList", ofType: "plist")!
+        
+        pageData = NSArray(contentsOfFile: plistPath)!
     }
 
     func viewControllerAtIndex(index: Int, storyboard: UIStoryboard) -> DataViewController? {
@@ -35,6 +27,11 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         if (self.pageData.count == 0) || (index >= self.pageData.count) {
             return nil
         }
+        
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setInteger(index, forKey: "pageNumber")
+        defaults.synchronize()
 
         // Create a new view controller and pass suitable data.
         let dataViewController = storyboard.instantiateViewControllerWithIdentifier("DataViewController") as! DataViewController

@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84E594CC1ADBA4B100F8C4F6 /* PList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84E594CB1ADBA4B100F8C4F6 /* PList.plist */; };
+		84E594D91ADBB6DB00F8C4F6 /* night1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E594CD1ADBB6DB00F8C4F6 /* night1.png */; };
+		84E594DA1ADBB6DB00F8C4F6 /* night0.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E594CE1ADBB6DB00F8C4F6 /* night0.png */; };
+		84E594DB1ADBB6DB00F8C4F6 /* edelweiss1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E594CF1ADBB6DB00F8C4F6 /* edelweiss1.png */; };
+		84E594DC1ADBB6DB00F8C4F6 /* edelweiss0.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E594D01ADBB6DB00F8C4F6 /* edelweiss0.png */; };
+		84E594DD1ADBB6DB00F8C4F6 /* alphabet1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E594D11ADBB6DB00F8C4F6 /* alphabet1.png */; };
+		84E594DE1ADBB6DB00F8C4F6 /* alphabet0.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E594D21ADBB6DB00F8C4F6 /* alphabet0.png */; };
+		84E594DF1ADBB6DB00F8C4F6 /* bday.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E594D31ADBB6DB00F8C4F6 /* bday.png */; };
+		84E594E01ADBB6DB00F8C4F6 /* cake.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E594D41ADBB6DB00F8C4F6 /* cake.png */; };
+		84E594E11ADBB6DB00F8C4F6 /* ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E594D51ADBB6DB00F8C4F6 /* ring.png */; };
+		84E594E21ADBB6DB00F8C4F6 /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E594D61ADBB6DB00F8C4F6 /* bell.png */; };
+		84E594E31ADBB6DB00F8C4F6 /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E594D71ADBB6DB00F8C4F6 /* sun.png */; };
+		84E594E41ADBB6DB00F8C4F6 /* deer.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E594D81ADBB6DB00F8C4F6 /* deer.png */; };
+		84E594E81ADBBE8700F8C4F6 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E594E71ADBBE8700F8C4F6 /* house.png */; };
+		84E594EA1ADBC09C00F8C4F6 /* wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84E594E91ADBC09C00F8C4F6 /* wallpaper.jpg */; };
+		84E594EC1ADBC81200F8C4F6 /* maiya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84E594EB1ADBC81200F8C4F6 /* maiya.mp3 */; };
+		84E594EE1ADBCE2800F8C4F6 /* homeimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E594ED1ADBCE2800F8C4F6 /* homeimage.png */; };
+		84E594F01ADBD1F900F8C4F6 /* playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E594EF1ADBD1F900F8C4F6 /* playbutton.png */; };
+		84E594F21ADBD29700F8C4F6 /* homePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E594F11ADBD29700F8C4F6 /* homePageViewController.swift */; };
 		CCEBB9221ADB35C2001B3234 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEBB9211ADB35C2001B3234 /* AppDelegate.swift */; };
 		CCEBB9241ADB35C2001B3234 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEBB9231ADB35C2001B3234 /* RootViewController.swift */; };
 		CCEBB9261ADB35C2001B3234 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEBB9251ADB35C2001B3234 /* DataViewController.swift */; };
@@ -28,6 +47,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84E594CB1ADBA4B100F8C4F6 /* PList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PList.plist; sourceTree = "<group>"; };
+		84E594CD1ADBB6DB00F8C4F6 /* night1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = night1.png; sourceTree = "<group>"; };
+		84E594CE1ADBB6DB00F8C4F6 /* night0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = night0.png; sourceTree = "<group>"; };
+		84E594CF1ADBB6DB00F8C4F6 /* edelweiss1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edelweiss1.png; sourceTree = "<group>"; };
+		84E594D01ADBB6DB00F8C4F6 /* edelweiss0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edelweiss0.png; sourceTree = "<group>"; };
+		84E594D11ADBB6DB00F8C4F6 /* alphabet1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alphabet1.png; sourceTree = "<group>"; };
+		84E594D21ADBB6DB00F8C4F6 /* alphabet0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alphabet0.png; sourceTree = "<group>"; };
+		84E594D31ADBB6DB00F8C4F6 /* bday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bday.png; sourceTree = "<group>"; };
+		84E594D41ADBB6DB00F8C4F6 /* cake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cake.png; sourceTree = "<group>"; };
+		84E594D51ADBB6DB00F8C4F6 /* ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ring.png; sourceTree = "<group>"; };
+		84E594D61ADBB6DB00F8C4F6 /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
+		84E594D71ADBB6DB00F8C4F6 /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
+		84E594D81ADBB6DB00F8C4F6 /* deer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deer.png; sourceTree = "<group>"; };
+		84E594E71ADBBE8700F8C4F6 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
+		84E594E91ADBC09C00F8C4F6 /* wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper.jpg; sourceTree = "<group>"; };
+		84E594EB1ADBC81200F8C4F6 /* maiya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = maiya.mp3; sourceTree = "<group>"; };
+		84E594ED1ADBCE2800F8C4F6 /* homeimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeimage.png; sourceTree = "<group>"; };
+		84E594EF1ADBD1F900F8C4F6 /* playbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbutton.png; sourceTree = "<group>"; };
+		84E594F11ADBD29700F8C4F6 /* homePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homePageViewController.swift; sourceTree = "<group>"; };
 		CCEBB91C1ADB35C1001B3234 /* happyReading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happyReading.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEBB9201ADB35C1001B3234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCEBB9211ADB35C2001B3234 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +77,7 @@
 		CCEBB92F1ADB35C2001B3234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CCEBB9351ADB35C2001B3234 /* happyReadingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = happyReadingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEBB93A1ADB35C2001B3234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCEBB93B1ADB35C2001B3234 /* happyReadingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = happyReadingTests.swift; sourceTree = "<group>"; };
+		CCEBB93B1ADB35C2001B3234 /* happyReadingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = happyReadingTests.swift; path = happyReadingTests/happyReadingTests.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +121,10 @@
 			children = (
 				CCEBB9211ADB35C2001B3234 /* AppDelegate.swift */,
 				CCEBB9231ADB35C2001B3234 /* RootViewController.swift */,
+				84E594CB1ADBA4B100F8C4F6 /* PList.plist */,
 				CCEBB9251ADB35C2001B3234 /* DataViewController.swift */,
 				CCEBB9271ADB35C2001B3234 /* ModelController.swift */,
+				84E594F11ADBD29700F8C4F6 /* homePageViewController.swift */,
 				CCEBB9291ADB35C2001B3234 /* Main.storyboard */,
 				CCEBB92C1ADB35C2001B3234 /* Images.xcassets */,
 				CCEBB92E1ADB35C2001B3234 /* LaunchScreen.xib */,
@@ -96,6 +136,23 @@
 		CCEBB91F1ADB35C1001B3234 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84E594CD1ADBB6DB00F8C4F6 /* night1.png */,
+				84E594EB1ADBC81200F8C4F6 /* maiya.mp3 */,
+				84E594CE1ADBB6DB00F8C4F6 /* night0.png */,
+				84E594CF1ADBB6DB00F8C4F6 /* edelweiss1.png */,
+				84E594D01ADBB6DB00F8C4F6 /* edelweiss0.png */,
+				84E594E71ADBBE8700F8C4F6 /* house.png */,
+				84E594ED1ADBCE2800F8C4F6 /* homeimage.png */,
+				84E594E91ADBC09C00F8C4F6 /* wallpaper.jpg */,
+				84E594EF1ADBD1F900F8C4F6 /* playbutton.png */,
+				84E594D11ADBB6DB00F8C4F6 /* alphabet1.png */,
+				84E594D21ADBB6DB00F8C4F6 /* alphabet0.png */,
+				84E594D31ADBB6DB00F8C4F6 /* bday.png */,
+				84E594D41ADBB6DB00F8C4F6 /* cake.png */,
+				84E594D51ADBB6DB00F8C4F6 /* ring.png */,
+				84E594D61ADBB6DB00F8C4F6 /* bell.png */,
+				84E594D71ADBB6DB00F8C4F6 /* sun.png */,
+				84E594D81ADBB6DB00F8C4F6 /* deer.png */,
 				CCEBB9201ADB35C1001B3234 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -198,9 +255,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E594EA1ADBC09C00F8C4F6 /* wallpaper.jpg in Resources */,
+				84E594EC1ADBC81200F8C4F6 /* maiya.mp3 in Resources */,
+				84E594E21ADBB6DB00F8C4F6 /* bell.png in Resources */,
+				84E594DF1ADBB6DB00F8C4F6 /* bday.png in Resources */,
+				84E594D91ADBB6DB00F8C4F6 /* night1.png in Resources */,
+				84E594DA1ADBB6DB00F8C4F6 /* night0.png in Resources */,
+				84E594F01ADBD1F900F8C4F6 /* playbutton.png in Resources */,
 				CCEBB92B1ADB35C2001B3234 /* Main.storyboard in Resources */,
+				84E594E81ADBBE8700F8C4F6 /* house.png in Resources */,
+				84E594CC1ADBA4B100F8C4F6 /* PList.plist in Resources */,
 				CCEBB9301ADB35C2001B3234 /* LaunchScreen.xib in Resources */,
+				84E594DE1ADBB6DB00F8C4F6 /* alphabet0.png in Resources */,
 				CCEBB92D1ADB35C2001B3234 /* Images.xcassets in Resources */,
+				84E594DD1ADBB6DB00F8C4F6 /* alphabet1.png in Resources */,
+				84E594DC1ADBB6DB00F8C4F6 /* edelweiss0.png in Resources */,
+				84E594E41ADBB6DB00F8C4F6 /* deer.png in Resources */,
+				84E594E11ADBB6DB00F8C4F6 /* ring.png in Resources */,
+				84E594EE1ADBCE2800F8C4F6 /* homeimage.png in Resources */,
+				84E594E31ADBB6DB00F8C4F6 /* sun.png in Resources */,
+				84E594DB1ADBB6DB00F8C4F6 /* edelweiss1.png in Resources */,
+				84E594E01ADBB6DB00F8C4F6 /* cake.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCEBB9241ADB35C2001B3234 /* RootViewController.swift in Sources */,
+				84E594F21ADBD29700F8C4F6 /* homePageViewController.swift in Sources */,
 				CCEBB9281ADB35C2001B3234 /* ModelController.swift in Sources */,
 				CCEBB9261ADB35C2001B3234 /* DataViewController.swift in Sources */,
 				CCEBB9221ADB35C2001B3234 /* AppDelegate.swift in Sources */,
@@ -419,6 +495,7 @@
 				CCEBB9411ADB35C2001B3234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCEBB9421ADB35C2001B3234 /* Build configuration list for PBXNativeTarget "happyReadingTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +504,7 @@
 				CCEBB9441ADB35C2001B3234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
